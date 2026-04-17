@@ -1,0 +1,28 @@
+Model Type,Avg IoU,Avg F1,Annotation Cost
+Weakly Supervised (SAM-COD Point),0.9012,0.9467,<10% (Only Points)
+Fully Supervised,0.9291,0.9626,100% (Pixel-level)
+
+# Individual Sample Metrics
+Image Name,Model Type,IoU,F1
+p_01b4c4ae.jpg,Weakly Supervised (SAM-COD Point),0.8479,0.9177
+p_0adf30f8.jpg,Weakly Supervised (SAM-COD Point),0.9512,0.9750
+p_163ba3d7.jpg,Weakly Supervised (SAM-COD Point),0.7748,0.8731
+p_1ba36197.jpg,Weakly Supervised (SAM-COD Point),0.9246,0.9608
+p_1d77b4e9.jpg,Weakly Supervised (SAM-COD Point),0.8890,0.9412
+p_2fe586c7.jpg,Weakly Supervised (SAM-COD Point),0.9544,0.9767
+p_352307a6.jpg,Weakly Supervised (SAM-COD Point),0.7742,0.8727
+p_48f2de97.jpg,Weakly Supervised (SAM-COD Point),0.9475,0.9730
+p_4f7c6782.jpg,Weakly Supervised (SAM-COD Point),0.9668,0.9831
+p_6a527868.jpg,Weakly Supervised (SAM-COD Point),0.9491,0.9739
+p_6ef88377.jpg,Weakly Supervised (SAM-COD Point),0.9342,0.9660
+p_01b4c4ae.jpg,Fully Supervised,0.8968,0.9456
+p_0adf30f8.jpg,Fully Supervised,0.9570,0.9780
+p_163ba3d7.jpg,Fully Supervised,0.8201,0.9012
+p_1ba36197.jpg,Fully Supervised,0.9503,0.9745
+p_1d77b4e9.jpg,Fully Supervised,0.9241,0.9605
+p_2fe586c7.jpg,Fully Supervised,0.9650,0.9822
+p_352307a6.jpg,Fully Supervised,0.8658,0.9281
+p_48f2de97.jpg,Fully Supervised,0.9577,0.9784
+p_4f7c6782.jpg,Fully Supervised,0.9731,0.9864
+p_6a527868.jpg,Fully Supervised,0.9637,0.9815
+p_6ef88377.jpg,Fully Supervised,0.9467,0.9726

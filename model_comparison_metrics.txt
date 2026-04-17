@@ -1,0 +1,39 @@
+
+===== Weakly Supervised (Point) Evaluation Results =====
+p_01b4c4ae.jpg - IoU: 0.5490, F1: 0.7089
+p_0adf30f8.jpg - IoU: 0.7807, F1: 0.8769
+p_163ba3d7.jpg - IoU: 0.5852, F1: 0.7384
+p_1ba36197.jpg - IoU: 0.8019, F1: 0.8901
+p_1d77b4e9.jpg - IoU: 0.8003, F1: 0.8891
+p_2fe586c7.jpg - IoU: 0.7162, F1: 0.8346
+p_352307a6.jpg - IoU: 0.6863, F1: 0.8140
+p_48f2de97.jpg - IoU: 0.8865, F1: 0.9398
+p_4f7c6782.jpg - IoU: 0.9182, F1: 0.9574
+p_6a527868.jpg - IoU: 0.8266, F1: 0.9051
+p_6ef88377.jpg - IoU: 0.8473, F1: 0.9173
+
+Weakly Supervised (Point) Average Metrics: IoU=0.7635, F1=0.8611
+
+===== Fully Supervised Evaluation Results =====
+p_01b4c4ae.jpg - IoU: 0.8968, F1: 0.9456
+p_0adf30f8.jpg - IoU: 0.9570, F1: 0.9780
+p_163ba3d7.jpg - IoU: 0.8201, F1: 0.9012
+p_1ba36197.jpg - IoU: 0.9503, F1: 0.9745
+p_1d77b4e9.jpg - IoU: 0.9241, F1: 0.9605
+p_2fe586c7.jpg - IoU: 0.9650, F1: 0.9822
+p_352307a6.jpg - IoU: 0.8658, F1: 0.9281
+p_48f2de97.jpg - IoU: 0.9577, F1: 0.9784
+p_4f7c6782.jpg - IoU: 0.9731, F1: 0.9864
+p_6a527868.jpg - IoU: 0.9637, F1: 0.9815
+p_6ef88377.jpg - IoU: 0.9467, F1: 0.9726
+
+Fully Supervised Average Metrics: IoU=0.9291, F1=0.9626
+Weakly Supervised vs Fully Supervised Model Comparison
+================================================================================
+| Model Type                | Avg IoU  | Avg F1   | Annotation Cost       |
+|---------------------------|----------|----------|------------------------|
+| Weakly Supervised (Point) | 0.7635   | 0.8611   | <10% (Only Points)     |
+| Fully Supervised          | 0.9291   | 0.9626   | 100% (Pixel-level)     |
+| Difference                | 0.1656   | 0.1015   | Reduced by 90%+        |
+================================================================================
+Conclusion: Weakly-supervised model greatly reduces annotation cost with acceptable performance drop.
