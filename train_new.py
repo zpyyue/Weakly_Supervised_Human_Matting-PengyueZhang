@@ -138,11 +138,15 @@ class MattingDataset(Dataset):
             mask = cv2.resize(mask, self.image_size)
 
             point_mask = np.zeros_like(mask)
-            coords = np.argwhere(mask > 127)
-            if len(coords) > 0:
+            coords_fg = np.argwhere(mask > 127)
+            coords_bg = np.argwhere(mask == 0)
+            if len(coords_fg) > 0:
                 for _ in range(2):
-                    y, x = coords[np.random.choice(len(coords))]
+                    y, x = coords_fg[np.random.choice(len(coords_fg))]
                     point_mask[y, x] = 255
+            if len(coords_bg) > 0:
+                y, x = coords_bg[np.random.choice(len(coords_bg))]
+                point_mask[y, x] = 255
 
             flip = False
             if self.is_train and np.random.rand() > 0.5:
